@@ -1,0 +1,11 @@
+
+  <form [formGroup]="nutrition"  (ngSubmit)="nutrition.valid&&formData()">
+    <textarea formControlName="recipe" cols="30" rows="10" class="form-control" style="height: 243px;"> </textarea>
+
+    <div class="buttons">
+      <input type="submit" class="btn" value="Analyze" >
+      <!-- <input type="submit" class="btn" value="New recipe" > -->
+    </div>
+  </form>
+
+

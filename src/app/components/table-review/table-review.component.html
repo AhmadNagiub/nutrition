@@ -1,0 +1,21 @@
+<br>
+<table *ngIf="result">
+  <caption>Review</caption>
+  <thead>
+    <th>Qty</th>
+    <th>Unit</th>
+    <th>Food</th>
+    <th>Calories</th>
+    <th>Weight</th>
+  </thead>
+  <tbody>
+      <tr *ngFor="let data of result">
+          <td>{{data.text.quantity}}</td>
+          <td>{{data.text.unit}}</td>
+          <td>{{data.text.food}}</td>
+          <td>{{data.text.data.calories}}</td>
+          <td>{{ getRound(data.text.data.totalWeight)}}</td>
+
+        </tr>
+  </tbody>
+</table>

@@ -1,0 +1,64 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+ul , li{
+  list-style: none;
+}
+.details{
+  border: 1px solid black;
+  width: 50%;
+  margin: auto;
+  background-color: white;
+  padding: 20px;
+  .header
+  {
+    border-bottom:10px solid black;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .Amount{
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .calarios{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid black;
+    .cal{
+      font-size: 40px;
+      font-weight: bold;
+    }
+  }
+  ul > li {
+    border-top: 2px solid black;
+
+  }
+  ul >li >ul{
+    padding-left: 20px;
+  }
+}
+div.first{
+  text-align: end;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: -5px;
+}
+.bold{
+  font-weight: bold;
+}
+.percent{
+  font-weight: bold;
+}
+.ml{
+  margin-left: 30px;
+}
+li{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5px ;
+  padding-bottom: 5px;
+}

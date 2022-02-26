@@ -1,0 +1,87 @@
+ <div class="details" *ngIf="result" >
+
+  <div class="header">
+    <h2>Nutrition Facts</h2>
+  </div>
+
+  <div class="Amount">
+    <span>Amount Per Serving</span> <br>
+    <div class="calarios">
+      <span class="cal">Calories</span> <span> {{result.calories}} </span>
+    </div>
+  </div>
+  <div class="first">% Daily Value*</div>
+  <ul>
+    <li class="fat ">
+      <span>
+        <span class="bold">Total Fat</span>   <span> {{getRound(result.totalNutrients.FAT.quantity)}} {{result.totalNutrients.FAT.unit}} </span>
+
+      </span>
+      <span class="percent">{{getRound(result.totalDaily.FAT.quantity)}} {{result.totalDaily.FAT.unit}}</span>
+    </li>
+
+        <li> <span>Saturated Fat {{getRound(result.totalNutrients.FASAT.quantity)}} {{result.totalNutrients.FASAT.unit}}</span>
+          <span class="percent">
+            {{getRound(result.totalDaily.FASAT.quantity)}} {{result.totalDaily.FASAT.unit}}
+          </span>  </li>
+        <li>
+          <span>Trans  Fat</span> <span></span>
+        </li>
+
+
+    <li class="Cholesterol ">
+      <span>
+        <span class="bold">Cholesterol</span>  <span>  {{getRound(result.totalNutrients.CHOLE.quantity)}} {{result.totalNutrients.CHOLE.unit}}</span>
+
+      </span>
+      <span class="percent">{{getRound(result.totalDaily.CHOLE.quantity)}} {{result.totalDaily.CHOLE.unit}}</span>
+    </li>
+    <li class="Sodium ">
+      <span>
+        <span class="bold">Sodium</span>  <span> {{getRound(result.totalNutrients.NA.quantity)}} {{result.totalNutrients.NA.unit}}</span>
+      </span>
+      <span class="percent">{{getRound(result.totalDaily.NA.quantity)}} {{result.totalDaily.NA.unit}}</span>
+    </li>
+    <li class="TotalCarbohydrate ">
+    <span class="bold">Total Carbohydrate</span>  <span >   {{getRound(result.totalNutrients.CHOCDF.quantity)}} {{result.totalNutrients.CHOCDF.unit}}</span>
+      <span class="percent">{{getRound(result.totalDaily.CHOCDF.quantity)}} {{result.totalDaily.CHOCDF.unit}}</span>
+    </li>
+        <li  class="DietaryFiber ml">
+          <span>Dietary Fiber {{getRound(result.totalNutrients.FIBTG.quantity)}} {{result.totalNutrients.FIBTG.unit}}</span>
+          <span class="percent">{{getRound(result.totalDaily.FIBTG.quantity)}} {{result.totalDaily.FIBTG.unit}}</span>
+
+        </li>
+        <li class="TotalSugars ml">
+          <span>SUGAR {{getRound(result.totalNutrients.SUGAR.quantity)}} {{result.totalNutrients.SUGAR.unit}}</span> <span></span>
+        </li>
+        <li class="Includes-AddedSugars ml">
+          <span>Includes AddedSugars</span> <span></span>
+        </li>
+    <li class="Protein">
+      <span>
+        <span class="bold">Protin </span> <span> Protin {{getRound(result.totalNutrients.PROCNT.quantity)}} {{result.totalNutrients.PROCNT.unit}}</span>
+      </span>
+      <span class="percent">{{getRound(result.totalDaily.PROCNT.quantity)}} {{result.totalDaily.PROCNT.unit}}</span>
+    </li>
+    <li class="VitaminD">
+      <span>Vitamin D {{getRound(result.totalNutrients.VITD.quantity)}} {{result.totalNutrients.VITD.unit}}</span>
+      <span class="percent">{{getRound(result.totalDaily.VITD.quantity)}} {{result.totalDaily.VITD.unit}}</span>
+    </li>
+    <li class="Calcium CA">
+      <span>Calcium {{getRound(result.totalNutrients.CA.quantity)}} {{result.totalNutrients.CA.unit}}</span>
+      <span class="percent">{{getRound(result.totalDaily.CA.quantity)}} {{result.totalDaily.CA.unit}}</span>
+
+    </li>
+    <li class="Iron">
+      <span>Iron {{getRound(result.totalNutrients.FE.quantity)}} {{result.totalNutrients.FE.unit}}</span>
+      <span class="percent">{{getRound(result.totalDaily.FE.quantity)}} {{result.totalDaily.FE.unit}}</span>
+    </li>
+    <li class="Potassium">
+      <span>Potassium {{getRound(result.totalNutrients.K.quantity)}} {{result.totalNutrients.K.unit}}</span>
+      <span class="percent">{{getRound(result.totalDaily.K.quantity)}} {{result.totalDaily.K.unit}}</span>
+    </li>
+  </ul>
+
+
+</div>
+
